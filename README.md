@@ -26,8 +26,6 @@ The `<Blur />` component accepts two props:
 - `radius`: a size value in any CSS units (e.g. `5px`). Default value: 0.
 - `transition`: a time value in any CSS units (e.g. `500ms`). Default value: 0.
 
-The `<Blur />` component only accepts one child component.
-
 ## Example
 
 ```javascript
