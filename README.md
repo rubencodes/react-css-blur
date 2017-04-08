@@ -30,27 +30,27 @@ The `<Blur />` component accepts two props:
 
 ```javascript
 class App extends React.Component {
-	state = {
-		blurOn: false
-	};
+  state = {
+    blurOn: false
+  };
 
-	blurOn = (blurOn) => {
-		this.setState({ blurOn });
-	}
+  blurOn = (blurOn) => {
+    this.setState({ blurOn });
+  }
 
-	render() {
-		return (
-			<div id="App">
-				<Blur radius={ this.state.blurOn ? '5px' : '0' } transition="400ms">
-					<h1
-						onMouseEnter={ () => this.blurOn(true) }
-						onMouseLeave={ () => this.blurOn(false) }>
-						Hover Me
-					</h1>
-				</Blur>
-			</div>
-		);
-	}
+  render() {
+    return (
+      <div id="App">
+        <Blur radius={ this.state.blurOn ? '5px' : '0' } transition="400ms">
+          <h1
+            onMouseEnter={ () => this.blurOn(true) }
+            onMouseLeave={ () => this.blurOn(false) }>
+            Hover Me
+          </h1>
+        </Blur>
+      </div>
+    );
+  }
 }
 ```
 
