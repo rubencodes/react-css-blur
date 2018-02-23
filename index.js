@@ -6,7 +6,7 @@ const _extends = Object.assign || function (target) { for (var i = 1; i < argume
 const Blur = function({ children, radius = 0, transition = '0s' }) {
 	const styles = {
 		'transition': 'filter ' + transition,
-		'-webkit-filter': 'blur(' + radius + ')',
+		'WebkitFilter': 'blur(' + radius + ')',
 		'filter': 'blur(' + radius + ')'
 	};
 
